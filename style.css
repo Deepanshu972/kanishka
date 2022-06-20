@@ -1,6 +1,259 @@
-/*  import google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+.timeline {
+    position: relative;
+    width: 85%;
+    margin: auto;
+}
+.timeline-box {
+    padding: 5px;
+    width: 41%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #0A2335;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    right: -9.3%;
+}
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+.timeline-container {
+    padding: 8px;   
+}
+.timeline-logo {
+    position: absolute;
+    width: 60px;
+    overflow: hidden;
+}
+.timeline-logo > img {
+    width: 100%;
+}
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 1%;
+    left: 50%;
+    border: 1px dashed #0A2335;
+    height: 90%;
+    color: #0A2335;
+}
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    left: inherit;
+    z-index: 2;   
+}
+#timeline-divider img {  
+    margin-top: -35px;
+    margin-left: -0.55em;
+    display: block;
+    color: #2857a4;
+}
+.experience-designation {
+    font-size: 1.15rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: inherit;
+    word-wrap: break-word;  
+}
+.experience-company-name {   
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.experience-duration {
+    color: inherit;
+    font-weight: 100;
+    color: inherit;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: inherit;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-align-justify {
+    text-align: justify;
+}
+.timeline-box a:link{
+    color: #eb822d
+}
+.timeline-box a:visited{
+    color: #eb822d
+}
+#contact{
+    background-color: #222;
+}
+#contact-form {
+    margin-left: 20%;
+}
+#contact-container {
+    display: flex;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+#my-details-container h4 {
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#contact-form-container {
+    width: 50%;
+}
+#my-details-container p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.my-details-info-container {
+    margin-bottom: 1em;
+    padding-bottom: auto;
+    margin-left: 0.5em;
+    color: white;
+    font-size: 1rem;   
+}
+.my-details-info-container span {
+    margin-left: 0rem;
+    font-weight: bold;
+}
+.my-details-info-container i {
+    color: white;
+}
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+#contact-form input
+ {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid white;
+    border-bottom: 2px solid white;
+    color: black;
+    background: whitesmoke;
+    width: 90%;
+    line-height: 1;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    color: white;
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid white;
+    border-bottom: 2px solid white;
+    color: black;
+    background: whitesmoke;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+#contact-form button[type="submit"] {
+    background: black;
+    font-size: 0.95rem;
+    border: 2px solid black;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#contact-form button:hover {
+    background: white;
+    color: black;
+}
+.my-details-info-container a:link{
+    color: white;
+    text-decoration: none;
+}
+.my-details-info-container a:visited{
+    color: white;
+}
+.my-details-info-container a:hover{
+    color: black;
+}
+#end{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+#end div{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: auto;
+    width: auto;
+}
+#end div button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    border: none;
+    height: auto;
+    width: auto;
+    border: solid 1px  wheat ;
+}
+#end div button:hover{
+    background-color: white;
+    color: black; 
+    border: solid 1px black;
+}
+#end div h3{
+    font-family: Arial, Helvetica, sans-serif;    
+}
+#end div h3:hover{
+   color:  black;
+}
+#end div button h3:hover{
+    color: white;
+ }
+#end a:link{
+    color: white;
+    text-decoration: none;
+}
+#end a:visited{
+    color: white;
 
+}
+#end a:hover{
+    color: white    ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +263,6 @@
 html{
     scroll-behavior: smooth;
 }
-
-/* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -21,12 +272,9 @@ html{
 ::-webkit-scrollbar-thumb {
     background: #888;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-/* all similar content styling codes */
 section{
     padding: 100px 0;
 }
@@ -38,13 +286,10 @@ section{
 .text-2:hover{
     color:   rgb(208, 7, 7);
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
-.services .serv-content,
-.skills .skills-content,
-.contact .contact-content{
+.about .about-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -79,8 +324,6 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-
-/* navbar styling */
 .navbar{
     position: fixed;
     width: 100%;
@@ -128,8 +371,6 @@ section .title::after{
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
-
-/* menu btn styling */
 .menu-btn{
     color: #fff;
     font-size: 23px;
@@ -163,9 +404,6 @@ section .title::after{
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
-
-
-/* home section styling */
 .home{
     display: flex;
     background: url("images/banner.jpg") no-repeat center;
@@ -215,11 +453,6 @@ section .title::after{
     color:   rgb(208, 7, 7);
     background: none;
 }
-
-/* about section styling */
-/* .about .title::after{
-    content: "who i am";
-} */
 .about .about-content .left{
     width: 45%;
 }
@@ -259,132 +492,17 @@ section .title::after{
     color:   rgb(208, 7, 7);
     background: none;
 }
-
-/* services section styling */
-.services, .teams,.contact{
+.teams,.contact{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before,.contact .title::before{
+.teams .title::before,
+.contact .title::before{
     background: #fff;
 }
-.services .title::after,
 .teams .title::after{
     background: #111;
-    /* content: "what i provide"; */
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover{
-    background:   rgb(208, 7, 7);
-}
-.services .serv-content .card .box{
-    transition: all 0.3s ease;
-}
-.services .serv-content .card:hover .box{
-    transform: scale(1.05);
-}
-.services .serv-content .card i{
-    font-size: 50px;
-    color:   rgb(208, 7, 7);
-    transition: color 0.3s ease;
-}
-.services .serv-content .card:hover i{
-    color: #fff;
-}
-.services .serv-content .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-/* skills section styling */
-
-.skills .title::after{
-    content: "what i know";
-}
-.skills .skills-content .column{
-    width: calc(50% - 30px);
-}
-.skills .skills-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.skills .skills-content .left p{
-    text-align: justify;
-}
-.skills .skills-content .left a{
-    display: inline-block;
-    background:   rgb(208, 7, 7);
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid   rgb(208, 7, 7);
-    transition: all 0.3s ease;
-}
-.skills .skills-content .left a:hover{
-    color:   rgb(208, 7, 7);
-    background: none;
-}
-.skills .skills-content .right .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .right .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .right span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .right .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .right .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background:   rgb(208, 7, 7);
-}
-.skills-content .right .html::before{
-    width: 90%;
-}
-.skills-content .right .css::before{
-    width: 60%;
-}
-.skills-content .right .js::before{
-    width: 80%;
-}
-.skills-content .right .php::before{
-    width: 50%;
-}
-.skills-content .right .mysql::before{
-    width: 70%;
-}
-
-/* teams section styling */
-/* .teams .title::after{
-    content: "who with me";
-} */
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -415,8 +533,6 @@ section .title::after{
     height: 200px;
     width: 250px;
     object-fit: cover;
-    /* border-radius: 50%; */
-    /* border: 5px solid   rgb(208, 7, 7); */
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
@@ -443,103 +559,6 @@ section .title::after{
 .owl-dot:hover{
     background:   rgb(208, 7, 7)!important; 
 }
-
-/* contact section styling */
-/* .contact .title::after{
-    content: "get in touch";
-} */
-.contact .contact-content .column{
-    width: calc(50% - 30px);
-}
-.contact .contact-content .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-.contact .contact-content .left p{
-    text-align: justify;
-}
-.contact .contact-content .left .icons{
-    margin: 10px 0;
-}
-.contact .contact-content .row{
-    display: flex;
-    height: 65px;
-    align-items: center;
-}
-.contact .contact-content .row .info{
-    margin-left: 30px;
-}
-.contact .contact-content .row i{
-    font-size: 25px;
-    color:   rgb(208, 7, 7);
-}
-.contact .contact-content .info .head{
-    font-weight: 500;
-}
-.contact .contact-content .info .sub-title{
-    color: #333;
-}
-.contact .right form .fields{
-    display: flex;
-}
-.contact .right form .field,
-.contact .right form .fields .field{
-    height: 45px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.contact .right form .textarea{
-    height: 80px;
-    width: 100%;
-}
-.contact .right form .name{
-    margin-right: 10px;
-}
-.contact .right form .field input,
-.contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease;
-}
-.contact .right form .field input:focus,
-.contact .right form .textarea textarea:focus{
-    border-color: #b3b3b3;
-}
-.contact .right form .textarea textarea{
-  padding-top: 10px;
-  resize: none;
-}
-.contact .right form .button-area{
-  display: flex;
-  align-items: center;
-}
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background:   rgb(208, 7, 7);
-  border: 2px solid   rgb(208, 7, 7);
-  transition: all 0.3s ease;
-}
-.right form .button-area button:hover{
-  color:   rgb(208, 7, 7);
-  background: none;
-}
-/* footer section styling */
 footer{
     background: #111;
     padding: 15px 23px;
@@ -553,16 +572,12 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-
-
-/* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
         width: 350px;
     }
 }
-
 @media (max-width: 991px) {
     .max-width{
         padding: 0 50px;
@@ -622,15 +637,6 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
 }
 
 @media (max-width: 690px) {
@@ -646,9 +652,6 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
-        width: 100%;
-    }
 }
 
 @media (max-width: 500px) {
@@ -658,19 +661,8 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 27px;
     }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
+    .about .about-content .right .text{
         font-size: 19px;
-    }
-    .contact .right form .fields{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
     }
     .scroll-up-btn{
         right: 15px;
