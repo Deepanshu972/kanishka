@@ -441,7 +441,7 @@ section .title::after{
 }
 .owl-dot.active,
 .owl-dot:hover{
-    background:   rgb(208, 7, 7)!important;
+    background:   rgb(208, 7, 7)!important; 
 }
 
 /* contact section styling */
