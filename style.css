@@ -511,6 +511,9 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
+.card{
+    margin-left: 0.1%;
+}
 .teams .carousel .card:hover{
     background:   rgb(208, 7, 7);
 }
@@ -674,8 +677,9 @@ footer span a:hover{
     }
 }
 .owl-carousel {
-    display:inline-flex;
+    display:flex;
     width: 100%;
+    margin-left: 0.1%;
     -webkit-tap-highlight-color: transparent;
        position: relative;
     z-index: 1; }
